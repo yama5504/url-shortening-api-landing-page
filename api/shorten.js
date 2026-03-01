@@ -1,16 +1,17 @@
 export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method Not Allowed' })
+  if (req.method !== "POST") {
+    return res.status(405).json({ error: "Method Not Allowed" });
   }
 
-  const response = await fetch("https://cleanuri.com/api/v1/shorten", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/x-www-form-urlencoded",
-    },
-    body: `url=${req.body.url}`,
-  })
+  const { url } = req.body;
 
-  const data = await response.json()
-  res.status(200).json(data)
+  if (!url) {
+    return res.status(400).json({ error: "URL is required" });
+  }
+  
+  const randomCode = Math.random().toString(36).substring(2, 8);
+
+  return res.status(200).json({
+    result_url: `https://url-shortening-api-landing-page-mu.vercel.app/${randomCode}`
+  });
 }
