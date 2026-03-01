@@ -8,10 +8,10 @@ export default async function handler(req, res) {
   if (!url) {
     return res.status(400).json({ error: "URL is required" });
   }
-  
+
   const randomCode = Math.random().toString(36).substring(2, 8);
 
   return res.status(200).json({
-    result_url: `https://url-shortening-api-landing-page-mu.vercel.app/${randomCode}`
+    result_url: `short.ly/${randomCode}`
   });
 }
