@@ -1,7 +1,9 @@
 {
   "name": "url-shortening-api-master",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "URL Shortening API landing page with advanced front-end validation and local storage persistence.",
+  "author": "yama5504",
   "type": "module",
   "scripts": {
     "dev": "vite",
