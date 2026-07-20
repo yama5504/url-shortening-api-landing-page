@@ -1,6 +1,6 @@
 # Frontend Mentor - Shortly URL短縮サービス（実装済コード）
 
-これは [Frontend Mentor の Shortly URL shortening API Challenge](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-27be0c4660) に対する解決策（実装コード）です。
+これは [Frontend Mentor の Shortly URL shortening API Challenge](https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G) に対する解決策（実装コード）です。
 
 Vercel Serverless Functionsを用いた軽量なAPIモックを実装し、フロントエンド側での例外処理やバリデーション、Clipboard APIを活用したUIインタラクションを組み込んだシングルページWebアプリケーションです。
 
@@ -13,12 +13,12 @@ Vercel Serverless Functionsを用いた軽量なAPIモックを実装し、フ�
 - [開発プロセス](#開発プロセス)
   - [ディレクトリ構造](#ディレクトリ構造)
   - [使用技術・環境](#使用技術環境)
-  - [工夫した技術的アプローチ](#工夫した技術的アプローチ)
-    - [1. Vercel Serverless Functionsを用いたAPIモックの構築](#1-Vercel Serverless Functionsを用いたAPIモックの構築)
-    - [2. URLコンストラクタを活用したフロントエンド・バリデーション](#2-URLコンストラクタを活用したフロントエンド・バリデーション)
-    - [3. Fetch API と async/await による非同期通信・例外処理](#3-Fetch API と async/await による非同期通信・例外処理)
-    - [4. イベントデリゲーションと Clipboard API による動的UI制御](#4-イベントデリゲーションと Clipboard API による動的UI制御)
-    - [5. 流体レスポンシブ（Fluid Design）とSassによるスタイリング管理](#5-流体レスポンシブFluid DesignとSassによるスタイリング管理)
+  - [こだわった技術的アプローチ](#こだわった技術的アプローチ)
+    - [1. Vercel Serverless Functionsを用いたAPIモックの構築](#1-vercel-serverless-functionsを用いたapiモックの構築)
+    - [2. URLコンストラクタを活用したフロントエンド・バリデーション](#2-urlコンストラクタを活用したフロントエンドバリデーション)
+    - [3. Fetch API と async/await による非同期通信・例外処理](#3-fetch-api-と-asyncawait-による非同期通信例外処理)
+    - [4. イベントデリゲーションと Clipboard API による動的UI制御](#4-イベントデリゲーションと-clipboard-api-による動的ui制御)
+    - [5. 流体レスポンシブ（Fluid Design）とSassによるスタイリング管理](#5-流体レスポンシブfluid-designとsassによるスタイリング管理)
 - [制作者](#制作者)
 
 ## 概要
